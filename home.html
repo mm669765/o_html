@@ -1,0 +1,2377 @@
+<div class = mw31Ze>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://media.proglib.io/wp-uploads/-000//1/0*KXuX_V54FKpK-wsX.gif" style="width:100%">
+  <div class="text">О HTML</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="data:image/jpeg;base64,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" style="width:100%">
+  <div class="text">О HTML</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://leonardo.osnova.io/8b115abf-1607-5dc1-95f3-be3a31296a12/-/resize/900/" style="width:100%">
+  <div class="text">О HTML</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
+
+
+
+</html>
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <style>
+   .text {
+    text-align:  center;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="text">
+  </div>
+ </body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+
+<p
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">html</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">тег</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">атрибут</button>
+  <button class="tablinks" onclick="openCity(event, '1')">все теги</button>
+  <button class="tablinks" onclick="openCity(event, '2')">все языки програмирования</button>
+</div>
+<div id="1" class="tabcontent">
+<tbody><tr>
+  </tr>
+
+<tr class="trn"> 
+<td><font size="+2"><b>&lt;a&gt;</b></font></td>
+<td class="tdl">
+Предназначен для создания ссылок (гипертекста). 
+<div id="Block1" style="display:none">
+<br>
+Атрибуты:<br>
+<b>name</b> - Присваивает имя элементу.<br>
+<b>href</b> - Присваивает адрес ресурса, к которому ведет ссылка.<br>для создания ссылки вызова почтовой программы <b>href="mailto:e-mail"</b><br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;a href="page.html" title="описание"&gt;</b>открыть страницу<b>&lt;/a&gt;</b><br>
+<b>&lt;a href="http://www.site.ru" &gt;</b>ссылка на сайт<b>&lt;/a&gt;</b><br> 
+<b>&lt;a href="mailto:e-mail@.ru"&gt;</b>открыть почтовую программу<b>&lt;/a&gt;</b><br>
+<b>&lt;a name="razdel"&gt;</b>присвоить имя<b>&lt;/a&gt;</b><br>
+<b>&lt;a href="#razdel"&gt;</b>перейти к закладке<b>&lt;/a&gt;</b>
+<br><br>
+<a href="../html/glava5.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 5. Ссылки)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block1')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trc">
+<td><font size="+2"><b>&lt;abbr&gt;</b></font></td>
+<td class="tdl"> 
+Выделяет в тексте аббревиатуру. Обычно подчеркивается пунктирной линией.
+<div id="Block2" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;abbr title="Ваше описание"&gt;</b>HTML<b>&lt;/abbr&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block2')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;acronym&gt;</b></font></td>
+<td class="tdl">
+Выделяет в тексте акроним. Обычно подчеркивается пунктирной линией.
+<div id="Block3" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;acronym title="Ваше описание"&gt;</b>Генштаб<b>&lt;/acronym&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block3')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trc">
+<td><font size="+2"><b>&lt;address&gt;</b></font></td>
+<td class="tdl">
+Указывает автора документа и его адрес. Обычно отображается курсивом.
+<div id="Block4" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;address title="Ваше описание"&gt;</b>Иванов Иван Иванович<b>&lt;/address&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block4')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>  
+</td>
+</tr>
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;area&gt;</b></font></td>
+<td class="tdl">
+Определяет области карты-изображения которые являются ссылками на тот или иной документ. располагается внутри тега <b>&lt;map&gt;</b>
+<div id="Block5" style="display:none">
+   <br>
+   Атрибуты:<br>
+   <b>alt</b> - альтернативный текст для области изображения<br>
+   <b>title</b>- всплывающая подсказка <br> 
+   <b>href</b> - указывает путь к открываемому документу<br> 
+
+   <b>shape</b> - форма области рисунка которая будет служить ссылкой. Может иметь одно из трёх значений:
+          <ul>
+		  <li><b>rect</b> - прямоугольная область
+          </li><li><b>poly</b> - область представляет собой некий многоугольник
+          </li><li><b>circle</b> - область заданная окружностью
+          </li></ul>
+   <b>coords</b> - координаты области<br>
+   <b>nohref</b> - область без ссылки на другой документ<br>
+   <b>target</b> - указывает в каком окне следует открывать документ.
+<ul>
+<li><b>_blank</b> - открыть в новом окне
+</li><li><b>_self</b> - открыть в текущем окне (по умолчанию)
+</li><li><b>_parent</b> - открыть документ в фрейме-родителе, если фреймов нет, то работает как _self.
+</li><li><b>_top</b> - отменяет фреймы и загружает документ в полном окне браузера, если фреймов нет, то как _self. 
+</li></ul>
+Синтаксис:<br>
+&lt;img src="karta.jpg" usemap="#panel" width="300" height="100" border="0"&gt;<br>
+&lt;map name="panel"&gt;<br>
+&nbsp;&nbsp;&nbsp;<b>&lt;area href="primer.html" shape="rect" coords="15,15,80,80" alt="описание" title="описание" target="_blank"&gt;</b><br>
+&lt;/map&gt;<br><br>
+не требует закрывающего тега	 
+<br><br>
+<a href="../html/glava8.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 8. Навигационные карты)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block5')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trc">
+<td><font size="+2"><b>&lt;b&gt;</b></font></td>
+<td class="tdl">
+Делает текст полужирным. Аналогичен тегу <b>&lt;strong&gt;</b>
+<div id="Block6" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;b title="Ваше описание"&gt;</b>этот текст будет полужирным<b>&lt;/b&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block6')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div> 
+</td>
+</tr>
+  
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;base&gt;</b><br></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block7" style="display:none">
+<br>
+Синтаксис:<br> 
+</div>
+<div align="right"><a href="javascript:show_hide('Block7')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div> 
+</td>
+</tr>
+  
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;basefont&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block8" style="display:none">
+<br>
+Синтаксис:<br> 
+</div>
+<div align="right"><a href="javascript:show_hide('Block8')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div> 
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;bdo&gt;</b></font></td>
+<td class="tdl">
+Определяет направление вывода текста. Основное предназначение работа с текстами языковых групп, где чтение происходит справа - налево.
+<div id="Block9" style="display:none">
+<br>
+Атрибуты:<br>
+<b>dir</b> - Направление
+<ul>
+<li><b>ltr</b> Слева - направо (по умолчанию)
+</li><li><b>rtl</b> справа - налево
+</li></ul>
+<b>title</b>- Всплывающая подсказка
+<p>Синтаксис:</p>
+<b>&lt;bdo dir="rtl" title="Ваше описание"&gt;Упер казак репу&lt;/bdo&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block9')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;bgsound&gt;</b></font></td>
+<td class="tdl">
+Внедряет в документ звуковой файл. Файл проигрывается в качестве фоновой музыки.
+<div id="Block10" style="display:none">
+<br>
+Атрибуты:<br>
+<b>loop</b> - Указывает на количество повторов воспроизведения файла.
+      <ul>
+		    <li><b>1</b> - Постоянное, непрерывное воспроизведение звукового файла.
+			</li><li><b>0</b> - Воспроизведение звукового файла только один раз.
+			</li><li><b>X</b> - Заданное количество повторов воспроизведения где Х - число повторов.
+		  </li></ul>
+        
+   <b>src</b> - Указывает путь к звуковому файлу
+    <p>Синтаксис:<br>
+      <b>&lt;bgsound src="music.wav" loop=3&gt;</b><br><br>
+	Не требует закрывающего тега.
+</p></div>
+<div align="right"><a href="javascript:show_hide('Block10')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;big&gt;</b></font></td>
+<td class="tdl">
+Делает текст крупным.
+<div id="Block11" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;big title="Ваше описание"&gt;</b>этот текст будет крупным<b>&lt;/big&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block11')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+   
+<tr class="trc">
+<td><font size="+2"><b>&lt;body&gt;</b></font></td>
+<td class="tdl">
+"Тело" документа указывает содержание видимой части документа.
+<div id="Block12" style="display:none">
+<br>
+Атрибуты:<br>
+<b>bgcolor</b> - задаёт цвет фона документа.<br>
+<b>background</b> - указывает адрес рисунка делая его фоном документа.<br> 
+<b>text</b> - цвет текста документа.<br> 
+<b>link </b>- цвет ссылок.<br>
+<b>vlink</b> - цвет посещённых ссылок. <br>
+<b>alink</b> - цвет нажатой, активной ссылки.<br>
+<i><b>bgproperties="fixed"</b> - делает рисунок фон фиксированным.(фоновое изображение не прокручивается при нажатии PageDown) </i><br><br>
+Синтаксис:<br> 
+<b>&lt;body link="#008000" alink="# ff0000 " vlink="# ffff00" text="#484800" bgcolor="#ffffff" background="fon.jpg" bgproperties="fixed"&gt;</b><br>
+содержание видимой части документа<br>
+<b>&lt;/body&gt;</b>
+<br><br>
+<a href="../html/glava1.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 1. Что такое HTML язык.)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block12')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>  
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;blockquote&gt;</b></font></td>
+<td class="tdl">
+Предназначен для создания цитат.
+<div id="Block13" style="display:none">
+<br> 
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br>
+<br>
+Синтаксис:<br>
+<b>&lt;blockquote title="подсказка"&gt;</b>Данный текст будет являться цитатой, имея отступы с обеих сторон документа и остального текста<b>&lt;/blockquote&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block13')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr> 
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;br&gt;</b></font></td>
+<td class="tdl">
+Перенос строки.
+<div id="Block14" style="display:none">
+<br>
+Синтаксис:<br><br> 
+<b>&lt;br&gt;</b><br>не требует закрывающего тега.
+<br><br>
+<a href="../html/glava1.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 1. Что такое HTML язык.)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block14')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+   
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;button&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block15" style="display:none">
+<br>
+Синтаксис:<br> 
+</div>
+<div align="right"><a href="javascript:show_hide('Block15')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>  
+</td>
+</tr> 
+     
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;caption&gt;</b></font></td>
+<td class="tdl">
+в редакции.. 
+<div id="Block16" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block16')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div> 
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;center&gt;</b></font></td>
+<td class="tdl">
+Горизонтальное выравнивание всех элементов по центру документа.
+<div id="Block17" style="display:none">
+<br>
+Синтаксис:<br> 
+<b>&lt;center&gt;</b>этот текст будет выровнен по центру<b>&lt;/center&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block17')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div> 
+</td>
+</tr> 
+    
+<tr class="trc">
+<td><font size="+2"><b>&lt;cite&gt;</b></font></td>
+<td class="tdl">
+Выделяет в тексте цитату. Обычно курсивом.
+<div id="Block18" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;cite title="Ваше описание"&gt;</b>Лед тронулся! господа присяжные заседатели!<b>&lt;/cite&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block18')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div> 
+</td>
+</tr>
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;code&gt;</b></font></td>
+<td class="tdl">
+Отмечает текст как некий программный код. Обычно отображается моноширинным шрифтом.
+<div id="Block19" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b> - всплывающая подсказка<br><br> 
+Синтаксис:<br>
+<b>&lt;code title="Ваше описание"&gt;</b>Некий программный код<b>&lt;/code&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block19')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div> 
+</td>
+</tr>
+      
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;col&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block20" style="display:none">
+<br>
+Синтаксис:<br>
+</div>
+<div align="right"><a href="javascript:show_hide('Block20')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;colgroup&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block21" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block21')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+ 
+<tr class="trc">
+<td><font size="+2"><b>&lt;dd&gt;</b></font></td>
+<td class="tdl">
+Описание списка определений.
+<div id="Block22" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br>
+Синтаксис:<br>
+&lt;dl&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;dt&gt;Опрределение <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> &lt;dd title="подсказка"&gt;Описание определения</b><br>
+&lt;/dl&gt; <br><br>
+Закрывающий тег необязателен.
+<br><br>
+<a href="../html/glava9.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 9. Списки)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block22')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+      
+<tr class="trn">
+<td><font size="+2"><b>&lt;del&gt;</b></font></td>
+<td class="tdl">
+Выделяет удалённый текст в новой версии документа. Выделенный текст станет перечёркнутым.
+<div id="Block23" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;del title="Ваше описание"&gt;</b>Старая цена 1000р.<b>&lt;/del&gt;</b> - Новая 999 р.!!!
+</div>
+<div align="right"><a href="javascript:show_hide('Block23')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>	
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;dfn&gt;</b></font></td>
+<td class="tdl">
+Отмечает текст как определение. Обычно отображается курсивом.
+<div id="Block24" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;dfn title="Ваше описание"&gt;</b>Электроток - это направленное упорядоченное движение заряженных частиц<b>&lt;/dfn&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block24')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+      
+<tr class="trn">
+<td><font size="+2"><b>&lt;div&gt;</b></font></td>
+<td class="tdl">
+Определяет блок HTML. Преимущественно используется совместно с CSS.
+<div id="Block25" style="display:none">
+<br>
+Атрибуты:<br>
+<b>align</b> - Выравнивание блока относительно страницы:
+<ul> 
+<li><b>left</b> - по левому краю документа (по умолчанию) 
+</li><li><b>right</b> - по правому краю документа 
+</li><li><b>center</b> - по центру
+</li><li><b>justify</b> - по обоим краям документа
+</li></ul> 
+<b>title</b> - Всплывающая подсказка.<br> 
+<b>unselectable</b> - Запрещает или разрешает пользователю выделять текст в блоке. 
+<ul>
+<li><b>on</b> - запрещает, 
+</li><li><b>off</b> - разрешает.
+</li></ul> 
+Синтаксис:<br>
+<b>
+&lt;div style="color: #ff0000; font-size: 22px" unselectable="on" align="center" title="подсказка"&gt;Текст в этом блоке нельзя выделить&lt;/div&gt;<br>
+</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block25')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trc">
+<td><font size="+2"><b>&lt;dl&gt;</b></font></td>
+<td class="tdl">
+Создаёт список определений.
+<div id="Block26" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br>
+Синтаксис:<br>
+<b>&lt;dl title="список"&gt;</b><br>
+&nbsp;&nbsp;&nbsp; &lt;dt&gt;Опрределение <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;dd&gt;Описание определения<br>
+<b>&lt;/dl&gt;</b>
+<br><br>
+<a href="../html/glava9.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 9. Списки)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block26')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div> 
+</td>
+</tr>
+      
+<tr class="trn">
+<td><font size="+2"><b>&lt;dt&gt;</b></font></td>
+<td class="tdl">
+Определение списка определений.
+<div id="Block27" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br>
+Синтаксис:<br>
+&lt;dl&gt;<br>
+&nbsp;&nbsp;&nbsp; <b>&lt;dt title="подсказка"&gt;Опрределение</b> <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;dd&gt;Описание определения<br>
+&lt;/dl&gt; <br><br>
+Закрывающий тег необязателен.
+<br><br>
+<a href="../html/glava9.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 9. Списки)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block27')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+        
+<tr class="trc">
+<td><font size="+2"><b>&lt;em&gt;</b></font></td>
+<td class="tdl">
+Выделяет особенно важный фрагмент текста. Обычно браузерами отображается курсивом.
+<div id="Block28" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;em title="Ваше описание"&gt;</b>этот текст будет наклонным<b>&lt;/em&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block28')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;embed&gt;</b><br></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block29" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block29')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;fieldset&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block30" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block30')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;font&gt;</b></font></td>
+<td class="tdl">
+Шрифт.
+<div id="Block31" style="display:none">
+<br>
+Атрибуты:<br>
+<b>size </b>- размер шрифта<br>
+<b>color</b> - цвет шрифта<br>
+<b>face</b> - задаёт шрифт из библиотеки шрифтов<br><br> 
+Синтаксис:<br> 
+<b>&lt;font face="arial" size="+2" color="#ff0000"&gt; </b>этот текст будет напечатан красным цветом с помощью шрифта Аrial размером+2 <b>&lt;/font&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block31')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;form&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block32" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block32')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;frame&gt;</b></font></td>
+<td class="tdl">
+Определяет фрейм в фреймовой структуре документа. Располагается внутри тега <b>&lt;frameset&gt;</b>.
+<div id="Block33" style="display:none">
+<br>
+Атрибуты:<br>
+<b>srs</b> - Путь к документу. Обязательный атрибут<br>
+<b>name</b> - Присваивает имя фрейму.<br> 
+<b>marginwidth</b> - Отступ в пикселях от левого и правого края фрейма.<br> 
+<b>marginheight</b> - Отступ в пикселях от верхнего и нижнего края фрейма.<br> 
+<b>scrolling</b> - Определяет наличие полос прокрутки содержимого фрейма.
+<ul>
+<li><b>no</b>- никогда не показывать полосу прокрутки,
+</li><li><b>yes</b> - всегда показывать,
+</li><li><b>auto</b>- показывать в том случае если она необходима.
+</li></ul>
+<b>noresize</b> - Запрещает пользователю изменять размеры фрейма.<br> 
+<b>frameborder</b> - Определяет наличие рамок у фрейма.
+<ul>
+<li><b>1</b> - включить рамку 
+</li><li><b>0</b>- выключить рамку
+</li></ul>
+<i><b>bordercolor</b> - Задаёт цвет бордюра фрейма.</i><br>
+<p>Синтаксис:<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;фреймы&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;frameset rows="30%,70%"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;frame src="primer1.html" marginwidth="0" marginheight="0" noresize&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;frame src="primer2.html" name="osnovnoe" scrolling="no" <i>bordercolor="#ff0000"</i>&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&lt;/frameset&gt;<br>
+&lt;/html&gt;<br><br>
+
+Не требует закрывающего тега.
+<br><br>
+<a href="../html/glava7.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 7. Фреймы)">Читать о теге подробно в учебнике HTML</a>
+</p></div>
+<div align="right"><a href="javascript:show_hide('Block33')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trc">
+<td><font size="+2"><b>&lt;frameset&gt;</b></font></td>
+<td class="tdl">
+Определяет фреймовую структуру документа. Используется вместо тега <b>&lt;body&gt;</b>.
+<div id="Block34" style="display:none">
+<br>  
+Атрибуты:<br>
+<b>rows</b> - Определяет количество и размеры горизонтальных фреймов в пикселях процентах или * - использовать всё свободное пространство.<br>  
+<b>cols</b> - Количество и размеры вертикальных фреймов.<br>
+<b>border</b> - Определяет ширину рамок фреймов в пикселях.<br>
+<i><b>frameborder</b> - Определяет наличие рамок у фрейма.</i>
+<ul>
+<li><b>1</b> - включить рамку 
+</li><li><b>0</b> - выключить рамку
+</li></ul>
+<i><b>framespacing</b> - определяет ширину рамок фреймов в пикселях. Альтернатива  <b>border</b> и <b>frameborder</b> при  нулевом значении.</i><br><br>
+Синтаксис:<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;фреймы&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&nbsp;<b>&lt;frameset rows="15%,85%" framespacing="0" frameborder="0" border="0"&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;frame src="logotype.html"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <b>&lt;frameset cols="20%,80%" framespacing="0" frameborder="0" border="0"&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &lt;frame src="menu.html"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &lt;frame src="text.html"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;/frameset&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;/frameset&gt;<br>  
+&lt;/html&gt;
+<br><br>
+<a href="../html/glava7.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 7. Фреймы)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block34')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;h1&gt;</b></font></td>
+<td class="tdl">
+Делает текст заголовоком. Может иметь значение от 1-6.
+<div id="Block35" style="display:none">
+<br>
+Атрибуты:<br>
+<b>align </b>-выравнивание заголовока по: 
+<ul>
+<li><b>center</b> - центру 
+</li><li><b>left</b> - левому краю 
+</li><li><b>right</b> - правому краю 
+</li></ul>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;h3 title="Ваше описание" align="right"&gt;</b>заголовок<b>&lt;/h3&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block35')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+    
+<tr class="trc">
+<td><font size="+2"><b>&lt;head&gt;</b></font></td>
+<td class="tdl">
+"Голова" определяет место в документе не для отображения видимой его части "тела" может располагать в себе теги предназначенные для поисковых машин, а так же название документа.
+<div id="Block36" style="display:none">
+<br>
+Синтаксис:<br> 
+<b>&lt;head&gt;<br>
+&lt;/head&gt;</b>
+<br><br>
+<a href="../html/glava1.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 1. Что такое HTML язык.)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block36')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;hr&gt;</b></font></td>
+<td class="tdl">
+Рисует горизонтальную линию.
+<div id="Block37" style="display:none">
+<br>
+Атрибуты:<br>
+<b>align </b>-выравнивание линии по: 
+<ul>
+<li><b>center</b> - центру 
+</li><li><b>left</b> - левому краю 
+</li><li><b>right</b> - правому краю 
+</li></ul>
+<b>size</b> - толщина линии<br> 
+<b>width</b> - ширина линии<br>  
+<i><b>color</b> - присваивает цвет линии<br></i>
+<b>noshade </b>- указывает на отсутствие тени линии<br><br>
+Синтаксис:<br> 
+<b>&lt;hr align="left" size="5" width="200" <i>color="#ff0000"</i> noshade&gt;</b><br>
+не требует закрывающего тега
+<br><br>
+<a href="../html/glava6.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 6. И ещё...)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block37')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+      
+<tr class="trc">
+<td><font size="+2"><b>&lt;html&gt;</b></font></td>
+<td class="tdl">
+Указывает программам просмотра html страниц начало и конец документа.
+<div id="Block38" style="display:none">
+<br>
+Синтаксис:<br> 
+<b>&lt;html&gt;<br>
+&lt;/html&gt;</b>
+<br><br>
+<a href="../html/glava1.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 1. Что такое HTML язык.)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block38')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+     
+<tr class="trn">
+<td><font size="+2"><b>&lt;i&gt;</b></font></td>
+<td class="tdl">
+Делает текст наклонным.
+<div id="Block39" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;i title="Ваше описание"&gt;</b>этот текст будет наклонным<b>&lt;/i&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block39')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;iframe&gt;</b></font></td>
+<td class="tdl">
+Вводит на страницу не фреймовой структуры плавающий фрейм.
+<div id="Block40" style="display:none">
+<br>
+Атрибуты:<br>
+<b>src</b> - Путь к вводимому документу (обязательный атрибут)<br>
+<b>width</b> - ширина плавающего фрейма в пикселях или процентах<br>
+<b>height</b> - высота плавающего фрейма<br><br>
+<b>scrolling </b>- показ полосы прокрутки:
+<ul>
+  <li><b>no</b>- никогда не показывать полосу прокрутки,
+  </li><li><b>yes</b> - всегда показывать,
+  </li><li><b>auto</b>- показывать в том случае если она необходима. 
+</li></ul>
+<b>align</b> - выравнивание пваюшего фрейма:
+<ul>
+   <li><b>left</b> - слева 
+   </li><li><b>right</b> - справа 
+   </li><li><b>top</b> - выше 
+   </li><li><b>bottom</b> - ниже 
+</li></ul>
+<b>frameborder</b> - наличие рамки вокруг плавающего фрейма:
+<ul>
+ <li><b>1</b> - включить рамку
+ </li><li><b>0</b>- выключить рамку
+</li></ul>
+Синтаксис:<br> 
+<b>&lt;iframe src="primer.html" width="300" height="250" align ="left" scrolling="auto" frameborder="1"&gt;&lt;/iframe&gt;</b>
+<br><br>
+<a href="../html/glava7.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 7. Фреймы)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block40')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr> 
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;img&gt;</b></font></td>
+<td class="tdl">
+Выводит графическое изображение (рисунок). 
+<div id="Block41" style="display:none">
+<br>
+Атрибуты:<br>
+<b>src</b> - адрес рисунка. (обязательный атрибут)<br>
+<b>align </b>-выравнивание рисунка по:<br> 
+<ul>
+<li><b>center</b> - центру
+</li><li><b>left</b> - левому краю
+</li><li><b>right</b> - правому краю
+</li><li><b>bottom</b> - нижнему краю
+</li><li><b>top</b> - верхнему краю
+</li><li><b>middle</b> - по середине
+</li></ul>
+<i><b>alt</b> - Описание рисунка (когда он не загружен), может выполнять роль всплывающей подсказки.<br></i>
+<b>title</b>- Всплывающая подсказка <br>
+<b>border</b> - Толщина рамки<br>
+<i><b>bordercolor</b> - Цвет рамки</i><br>
+<b>width</b> - Ширина рисунка<br> 
+<b>height</b> - Высота рисунка<br>
+<b>hspace</b> - Горизонтальный отступ<br>
+<b>vspace</b> - Вертикальный отступ<br>
+<b>ismap</b> - Изображение является навигационной картой на сервере<br> 
+
+<b>usemap</b> - Изображение является навигационной картой на стороне клиента.<br><br>
+Синтаксис:<br> 
+<b>&lt;img src="foto.jpg" <i>alt="описание"</i> title="описание" align="right" width="100" height="100" hspace="10" vspace="10" border="2" <i>bordercolor="#ff0000"</i>&gt;</b><br>
+Не требует закрывающего тега
+<br><br>
+<a href="../html/glava3.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 3. Графические изображения)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block41')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>  
+         
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;input&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block42" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block42')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;ins&gt;</b></font></td>
+<td class="tdl">
+Выделяет новый текст в новой версии документа. Выделенный текст станет подчёркнутым.
+<div id="Block43" style="display:none">
+Противоположен по значению тегу <b>&lt;del&gt;</b>.
+<br><br>
+Атрибуты:<br>
+<b>title</b>- всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+&lt;del&gt; Старая цена 1000р.&lt;/del&gt; - <b>&lt;ins title="Ваше описание"&gt;</b>Новая 999 р.<b>&lt;/ins&gt;</b>!!!
+</div>
+<div align="right"><a href="javascript:show_hide('Block43')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;kbd&gt;</b></font></td>
+<td class="tdl">
+От английского keyboard - клавиатура. Указывает текст вводимый с клавиатуры. Обычно отображается моноширинным шрифтом.
+<div id="Block44" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;kbd title="Ваше описание"&gt;</b>Текст набранный клавиатурой<b>&lt;/kbd&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block44')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr> 
+          
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;label&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block45" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block45')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;legend&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block46" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block46')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;li&gt;</b></font></td>
+<td class="tdl">
+Обозначает элемент списка. Используется в нумерованных и ненумерованных списках.
+<div id="Block47" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br>
+Синтаксис:<br>
+&lt;ul&gt;<br>
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li title="главный пункт"&gt;Пункт 1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 3<br></b>
+&lt;/ul&gt;<br>
+<br>
+Закрывающий тег необязателен.
+<br><br>
+<a href="../html/glava9.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 9. Списки)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block47')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div> 
+</td>
+</tr>
+          
+<tr class="trc">
+<td><font size="+2"><b>&lt;link&gt;</b></font></td>
+<td class="tdl">
+Указывает на связь документа с каким либо внешним файлом.
+<div id="Block48" style="display:none">
+Тег <b>&lt;link&gt;</b> является ссылкой, но не для людей а для программ, и ведет к внешнему файлу например  иконке или таблице стилей.. Располагается в "голове" документа между тегом <b>&lt;head&gt;&lt;/head&gt;</b> и не выводится браузерами на экран.<br><br>  
+Атрибуты:<br>
+<b>href</b> - Путь к файлу.<br> 
+<b>rel</b> - Определяет отношения между текущим документом и файлом, на который делается ссылка.
+<ul>
+<li>shortcut icon - Определяет, что подключаемый файл является иконкой.
+</li><li>stylesheet - Определяет, что подключаемый файл содержит таблицу стилей.
+</li><li>application/rss+xml - Файл в формате XML для описания ленты новостей.
+</li></ul>
+<b>type</b> - тип данных подключаемого файла.<br>
+
+<br>
+Синтаксис:<br>
+&lt;head&gt;<br>
+<b>&nbsp;&nbsp;&nbsp;&lt;link rel="shortcut icon" href="favicon.ico"&gt;</b><br>
+<b>&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" href="style.css" type="text/css"&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&lt;title&gt;link&lt;/title&gt;<br>
+&lt;/head&gt;<br><br>
+Не требует закрывающего тега.
+</div>
+<div align="right"><a href="javascript:show_hide('Block48')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;map&gt;</b></font></td>
+<td class="tdl">
+Определяет место в коде документа в котором создаётся описание карты-изображения с помощью тега/тегов <b>&lt;area&gt;</b>
+<div id="Block49" style="display:none">
+<br>
+Атрибуты:<br>
+<b>name</b> - указывает имя графического изображения которое является картой<br><br>
+Синтаксис:<br>
+&lt;img src="karta.jpg" usemap="#panel" width="300" height="100" border="0"&gt;<br>
+<b>&lt;map name="panel"&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&lt;area href="primer.html" shape="rect" coords="15,15,80,80" alt="описание" title="описание" target="_blank"&gt;<br>
+<b>&lt;/map&gt;</b>
+<br><br>
+<a href="../html/glava8.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 8. Навигационные карты)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block49')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+  
+<tr class="trc">
+<td><font size="+2"><b>&lt;marquee&gt;</b></font></td>
+<td class="tdl">
+Бегущая строка.
+<div id="Block50" style="display:none">
+<br>
+Атрибуты:<br>
+<b>behavior</b> - определяет тип скроллинга, может иметь следующие значения: 
+<ul>
+<li><b>alternate</b> - колебательные движения от края к краю 
+</li><li><b>scroll</b> - прокручивание текста. текст будет выходить за рамки экрана и снова появляться с противоположной его стороны
+</li><li><b>slide</b> - прокручивание текста c остановкой.
+</li></ul>
+<b>scrollamount</b> - скорость бегущей строки от  1 до 10.<br>
+<b>loop</b> задает количество прокруток  бегущей строки.<br>
+<br>
+<b>direction</b> - направление движения текста. значения:
+<ul>
+<li><b>up</b> - вверх, 
+</li><li><b>down</b> - вниз,  
+</li><li><b>left</b> - влево, 
+</li><li><b>right</b> - вправо.   
+</li></ul>
+<b>bgcolor</b> - цвет фона бегущей строки,<br> 
+<b>height</b> - высота строки,<br> 
+<b>width</b> - ширина строки.<br> 
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;marquee behavior="alternate" direction="right" scrollamount="8" bgcolor="#b40000" title="описание"&gt;</b>этот текст будет являтся бегущей строкой<b>&lt;/marquee&gt;</b>
+<br><br>
+<a href="../html/glava6.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 6. И ещё...)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block50')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+ 
+<tr class="trn">
+<td><font size="+2"><b>&lt;meta&gt;</b></font></td>
+<td class="tdl">
+Определяет мета теги информация в которых предназначена для браузеров и поисковых систем. 
+<div id="Block51" style="display:none">
+Мета теги не видны пользователю и располагаются в заголовке HTML документа между тегами <b>&lt;head&gt; &lt;/head&gt;</b><br><br> 
+Атрибуты:<br>
+<b>http-equiv</b>  - указывает браузеру как следует обработать основное содержание документа.<br>
+<b>name</b> - информационное имя.<br>
+<b>content</b> - информационное содержание(обязательный атрибут).<br>
+Атрибуты <b>http-equiv</b> и <b>name</b> могут быть равны любому подходящему идентификатору.<br>
+<br>
+Синтаксис:<br>
+&lt;head&gt;<br>
+<b>&nbsp;&nbsp;&nbsp;&lt;meta http-equiv="Content-Type" Content="text/html; Charset=Windows-1251"&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;meta name="author" Content="Остап Бендер"&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;meta name="copyright" Content=""Рога и копыта" Остап Бендер"&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;meta name="description" Content="Производим закупку по выгодным ценам рогов и копыт!"&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;meta name="keywords" Content="рога, копыта, рожки, рог, копыто, копытце, закупка, покупка, приобретение, выгодно, продать, купить, сбыть, реализовать, корова, бык, коровьи, бычьи, оплата, деньги, наличные, цена, цене"&gt;</b><br>
+&lt;/head&gt;<br><br>
+Не требует закрывающего тега.
+<br><br>
+<a href="../html/glava10.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 10. Meta теги.)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block51')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;nobr&gt;</b></font></td>
+<td class="tdl">
+Запретить перенос строки.  Противоположенный по значению тег &lt;br&gt;
+<div id="Block52" style="display:none">
+<br>
+Синтаксис:<br> 
+<b>&lt;nobr&gt;</b>Длинная, длинная, очень длинная строка.. которая не будет переносится на другую строчку так как мы принудительно запретили ей это делать. Из-за неё появится горизонтальная полоса прокрутки, однако, что поделаешь, раз нам так захотелось..<b>&lt;/nobr&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block52')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+ 
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;noembed&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block53" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block53')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;noframes&gt;</b></font></td>
+<td class="tdl">
+Тег <b>&lt;noframes&gt;</b> выводит текст заключенный в него в том случае если браузер пользователя не поддерживает фреймы или они принудительно выключены в его настройках.
+<div id="Block54" style="display:none">
+&nbsp;&nbsp;&nbsp;Тег <b>&lt;noframes&gt;</b> должен быть расположен внутри тега  <b>&lt;frameset&gt;</b>.
+<br><br>
+Синтаксис:<br>
+<b>&lt;noframes&gt;</b>Извините, но Ваш браузер не поддерживает фреймы..<b>&lt;/noframes&gt;</b>
+<br><br>
+<a href="../html/glava7.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 7. Фреймы)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block54')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;noscript&gt;</b></font></td>
+<td class="tdl">
+Тег <b>&lt;noscript&gt;</b> выводит текст заключенный в него в том случае если браузер пользователя не поддерживает скрипты или они принудительно выключены в его настройках.
+<div id="Block55" style="display:none">
+<br>
+Синтаксис:<br>
+<b>&lt;noscript&gt;</b>Извините, но Ваш браузер не поддерживает скрипты..<b>&lt;/noscript&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block55')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div></td>
+</tr>
+
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;object&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block56" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block56')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;ol&gt;</b></font></td>
+<td class="tdl">
+Определяет нумерованный (упорядоченный) список.
+<div id="Block57" style="display:none">
+<br>
+Атрибуты:<br>
+<b>type</b>-Тип маркера
+<ul>
+<b> 
+<li>А - Заглавные буквы
+</li><li>а - Строчные буквы
+</li><li>I - Заглавные римские цифры
+</li><li>i - Строчные римские цифры
+</li></b><li><b>1 - Арабские цифры (по умолчанию)
+</b>
+</li></ul>
+<b>title</b> - Всплывающая подсказка <br>
+<b>start</b> - Начальное значение для нумерованного списка<br><br>
+Синтаксис:<br> 
+<b>&lt;ol type=1 start="24" title="список"&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 24<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 25<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 26<br>
+<b>&lt;/ol&gt;</b>
+<br><br>
+<a href="../html/glava9.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 9. Списки)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block57')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr> 
+  
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;optgroup&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block58" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block58')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;option&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block59" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block59')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+	 
+<tr class="trc">
+<td><font size="+2"><b>&lt;p&gt;</b></font></td>
+<td class="tdl">
+Создаёт параграф.
+<div id="Block60" style="display:none">
+<br>
+Атрибуты:<br>
+<b>align</b> - Выравнивание параграфа относительно страницы:
+<ul> 
+<li><b>left</b> - по левому краю документа (по умолчанию) 
+</li><li><b>right</b> - по правому краю документа 
+</li><li><b>center</b> - по центру
+</li><li><b>justify</b> - по обоим краям документа
+</li></ul> 
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;p align="right" title="Ваше описание"&gt;</b>Текст<b>&lt;/p&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block60')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr> 
+  
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;param&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block61" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block61')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;pre&gt;</b></font></td>
+<td class="tdl">
+Обрамляет предварительно отформатированный текст. Браузер при выводе текста на экран не удаляет пробелы и переносы строк.
+<div id="Block62" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;pre title="Ваше описание"&gt;</b>Текст &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    текст &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;    текст<b>&lt;/pre&gt;
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст.)">Читать о теге подробно в учебнике HTML</a>
+</b></div><b>
+<div align="right"><a href="javascript:show_hide('Block62')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</b></td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;q&gt;</b></font></td>
+<td class="tdl">
+Предназначен для создания цитат. От <b>&lt;blockquote&gt;</b> отличается тем что цитата не имеет отступов. А в отличие от тега <b>&lt;cite&gt;</b> цитата обозначенная тегом <b>&lt;q&gt;</b> автоматически берётся браузерами в кавычки.
+<div id="Block63" style="display:none">
+<br> 
+   Атрибуты:<br>
+ <b>title</b>- Всплывающая подсказка <br>
+ <br>
+  Синтаксис:<br>
+ <b>&lt;q title="подсказка"&gt;</b>Данный текст будет являться цитатой.<b>&lt;/q&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block63')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;s&gt;</b></font></td>
+<td class="tdl">
+Делает текст перечёркнутым. Аналогичент тегу <b>&lt;strike&gt;</b>.
+<div id="Block64" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;s title="Ваше описание"&gt;</b>Этот текст будет перечёркнутым<b>&lt;/s&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block64')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr> 
+ 
+<tr class="trn">
+<td><font size="+2"><b>&lt;samp&gt;</b></font></td>
+<td class="tdl">
+Выделяет текст как образец. Используется для отметки текста являющемся результатом работы программ.
+<div id="Block65" style="display:none">
+Отображается моноширинным шрифтом.<br><br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;samp title="Ваше описание"&gt;</b>Этот текст является результатом действия некой программы<b>&lt;/samp&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block65')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;script&gt;</b></font></td>
+<td class="tdl">
+Внедряет на страницу скрипт.
+<div id="Block66" style="display:none">
+<br>
+Атрибуты:<br>
+<i><b>defer</b> - Указывает на то что перед выполнением скрипта следует полностью загрузить документ в который он внедрён.<br></i>
+<b>type</b> - Определяет тип содержимого тега <b>&lt;script&gt;</b><br>
+<b>language</b> - Определяет язык скрипта.<br>
+<ul>
+<li><b>JScript</b>
+</li><li><b>javascript</b>
+</li><li><b>VBS</b>
+</li><li><b>VBScript</b> 
+</li></ul>
+<b>src</b> - Путь к внешнему файлу содержащему скрипт.<br><br> 
+Синтаксис:<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;скрипт&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;script language="vbscript"&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sub knopka()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alert "Привет мир!"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End Sub<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;/script&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button onclick="knopka()"&gt;кнопка&lt;/button&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</div>
+<div align="right"><a href="javascript:show_hide('Block66')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;select&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block67" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block67')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;small&gt;</b></font></td>
+<td class="tdl">
+Делает текст малым.
+<div id="Block68" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;small title="Ваше описание"&gt;</b>Этот текст будет маленьким<b>&lt;/small&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block68')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+ 
+<tr class="trn">
+<td><font size="+2"><b>&lt;span&gt;</b></font></td>
+<td class="tdl">
+Определяет контейнер для внутреннего текста. Как правило используется совместно с CSS. 
+<div id="Block69" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b> - Всплывающая подсказка.<br>
+<b>unselectable</b> - Запрещает или разрешает пользователю выделять текст в блоке. 
+<ul>
+<li><b>on</b> - запрещает, 
+</li><li><b>off</b> - разрешает.
+</li></ul>
+Синтаксис:<br>
+&lt;p&gt;<b>&lt;span style="color: #ff0000; font-size: 22px" unselectable="on" title="Описание"&gt;Первое&lt;/span&gt;</b> слово в параграфе имеет собственыые свойства&lt;p&gt;
+</div>
+<div align="right"><a href="javascript:show_hide('Block69')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;strike&gt;</b></font></td>
+<td class="tdl">
+Делает текст перечёркнутым. Аналогичент тегу <b>&lt;s&gt;</b>.
+<div id="Block70" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;strike title="Ваше описание"&gt;</b>Этот текст будет перечёркнутым<b>&lt;/strike&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block70')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr> 
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;strong&gt;</b></font></td>
+<td class="tdl">
+Выделяет особенно важный фрагмент текста. Обычно браузерами отображается полужирным.
+<div id="Block71" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;strong title="Ваше описание"&gt;</b>Этот текст будет полужирным<b>&lt;/strong&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block71')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;style&gt;</b></font></td>
+<td class="tdl">
+Служит для определения стилей элементов страницы. Тег <b>&lt;style&gt;</b> распологается в заголовке страницы между <b>&lt;head&gt;&lt;/head&gt;</b>.
+<div id="Block72" style="display:none">
+<br>
+Атрибуты:<br>
+<b>media</b> - Указывает на устройство вывода, для работы с которым предназначена таблица стилей.
+<ul>
+<li><b>all</b> -Все устройства.
+</li><li><b>screen</b> - Монитор (по умолчанию).
+</li><li><b>print</b> - Принтер.
+</li><li><b>projection</b> - Проектор.
+</li><li><b>braille</b> - Устройства, основанные на системе Брайля. Предназначены для слепых людей.
+</li><li><b>speech</b> - Речевые синтезаторы. 
+</li></ul>
+<b>type</b> - Сообщает браузеру, какой синтаксис использовать для правильной интерпретации стилей.
+Синтаксис:<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Стили&lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<b>style type="text/css"&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:link { <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #008000;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 14px;<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a:hover {<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #ff0000;<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&lt;/style&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;body&gt;<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="page.html"&gt;открыть страницу&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>  
+</div>
+<div align="right"><a href="javascript:show_hide('Block72')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;sub&gt;</b></font></td>
+<td class="tdl">
+Нижний индекс.
+<div id="Block73" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+Нижний<b>&lt;sub title="Ваше описание"&gt;</b>индекс<b>&lt;/sub&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block73')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trc">
+<td><font size="+2"><b>&lt;sup&gt;</b></font></td>
+<td class="tdl">
+Верхний индекс.
+<div id="Block74" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+Верхний<b>&lt;sup title="Ваше описание"&gt;</b>индекс<b>&lt;/sup&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block74')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;table&gt;</b></font></td>
+<td class="tdl">
+Создаёт таблицу.
+<div id="Block75" style="display:none">
+<br>
+Атрибуты:<br>
+<b>align</b> - Выравнивание таблицы по:
+<ul> 
+<li><b>left</b> - по левому краю (по умолчанию) 
+</li><li><b>right</b> - по правому краю 
+</li><li><b>center</b> - по центру
+</li><li><b>justify</b> - по левому и правому краю
+</li></ul>
+<b>bgcolor</b> - Цвет фона таблицы.<br> 
+<b>border</b> - Толщина бордюра в пикселях.<br>
+<b>background</b> - Задает фоновый рисунок в таблице.<br> 
+<i><b>bordercolor</b> - Цвет бордюра.</i><br> 
+<b>cellspacing</b> - Расстояние между ячейками таблицы.<br> 
+<b>cellpadding</b> - Расстояние между содержимым ячейки и рамкой.<br> 
+<b>width</b> - Ширина таблицы в процентах или пикселях.<br> 
+<b>height</b> - Высота таблицы в процентах или пикселях.<br>
+<b>cols</b> - Определяет число колонок в таблице. Позволяет браузерам показывать содержимое таблицы ещё до окончания её полной загрузки.<br>
+<b>frame </b>- Определяет в каких местах таблицы следует показывать бордюр.
+<ul>
+<li><b>void</b> - Нет бордюра
+</li><li><b>border</b> - Бордюр вокруг всей таблицы. (по умолчанию)
+</li><li><b>above</b> - Бордюр по верхнему краю таблицы.
+</li><li><b>below</b> - Бордюр только снизу таблицы.
+</li><li><b>hsides</b> - Только горизонтальные границы.
+</li><li><b>vsides</b> - Только вертикальные границы.
+</li><li><b>rhs</b> -Бордюр только справа.
+</li><li><b>lhs</b> - Бордюр только слева.
+</li></ul>
+<b>rules</b> - Определяет в каких местах ячеек таблицы следует показывать бордюр.
+<ul>
+<li><b>all</b> - Вокруг каждой ячейки.(по умолчанию)
+</li><li><b>groups</b> - Между группами ячеек образованными тегами <b>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;colgroup&gt;, &lt;col&gt;.</b>
+</li><li><b>cols</b> - Только между столбцами таблицы.
+</li><li><b>none</b> - Отсутствуют.
+</li><li><b>rows</b> - Только между строк таблицы. 
+</li></ul>
+Синтаксис:<br> 
+&nbsp;&nbsp;&nbsp; &lt;<b>table cols="2" border="5" frame="vsides" align="center" width="100%" height="300" cellpadding="5" cellspacing="2" bgcolor="#ffa0cf"</b>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;td&gt;строка1 ячейка1&lt;/td&gt; &lt;td&gt;строка1 ячейка2&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &lt;/tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;td&gt;строка2 ячейка1&lt;/td&gt; &lt;td&gt;строка2 ячейка2&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &lt;/tr&gt;<br>
+&nbsp;&nbsp;&nbsp;<b> &lt;/table&gt;</b>
+<br><br>
+<a href="../html/glava4.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 4. Таблицы)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block75')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr> 
+  
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;tbody&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block76" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block76')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;td&gt;</b></font></td>
+<td class="tdl">
+Создаёт отдельную ячейку в таблице.
+<div id="Block77" style="display:none">
+<br>
+Атрибуты:<br>
+<b>width</b> - Ширина ячейки в процентах или пикселях<br> 
+<b>height</b> - Высота ячейки в процентах или пикселях<br> 
+<br>
+<b>align</b> - Выравнивает текст в ячейке:
+<ul> 
+<li><b>left</b> - по левому краю (по умолчанию) 
+</li><li><b>right</b> - по правому краю 
+</li><li><b>center</b> - по центру
+</li><li><b>justify</b> - по левому и правому краю
+</li></ul> 
+<b>valign</b> - Выравнивает текст в ячейке по вертикали: 
+<ul>
+<li><b>top</b> - по верхнему краю 
+</li><li><b>middle</b> - по центру 
+</li><li><b>bottom</b> - по нижнему краю
+</li><li><b>baseline</b> - по базовой линии.
+</li></ul> 
+<b>colspan</b> - количество столбцов занимаемое ячейкой<br>
+<b>rowspan</b> - количество рядов занимаемое ячейкой<br>
+<b>bgcolor</b> - Цвет фона ячейки<br>
+<b>background</b> - Задает фоновый рисунок в ячейке.<br> 
+<i><b>bordercolor</b> - Цвет бордюра.</i><br>
+<b>title</b> - Всплывающая подсказка<br>
+<b>nowrap</b> - Запрещает перенос строк в ячейке.<br>
+<br>
+Синтаксис:<br> 
+&nbsp;&nbsp;&nbsp; &lt;table border="1" width="100%" height="300"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <b> &lt;td colspan="2" valign="top" align="center" bgcolor="#b2ff80"&gt;строка1 ячейка1&lt;/td&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &lt;/tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <b>&lt;td height="200" width="33%" bgcolor="#ffa0cf"&gt;строка2 ячейка1&lt;/td&gt;</b><br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <b>&lt;td title="Описание ячейки" align="center"&gt;строка2 ячейка2&lt;/td&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &lt;/tr&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/table&gt;
+<br><br>
+<a href="../html/glava4.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 4. Таблицы)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block77')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>   
+ 
+<tr class="trc" style="display:none">
+<td><font size="+2"><b>&lt;textarea&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block78" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block78')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;tfoot&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block79" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block79')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;th&gt;</b></font></td>
+<td class="tdl">
+Создаёт ячейку в таблице которая определяется как заголовок.
+<div id="Block80" style="display:none">
+Обычно браузеры выравнивают содержимое ячейки/заголовка по центру и делают текст жирным.
+<br><br>
+Атрибуты:<br>
+
+<b>width</b> - Ширина ячейки в процентах или пикселях<br>
+<b>height</b> - Высота ячейки в процентах или пикселях<br>
+<br>
+<b>align</b> - Выравнивает текст в ячейке:
+<ul>
+<li><b>left</b> - по левому краю
+</li><li><b>right</b> - по правому краю
+</li><li><b>center</b> - по центру
+</li><li><b>justify</b> - по левому и правому краю
+</li></ul> 
+<b>valign</b> - Выравнивает текст в ячейке по вертикали: 
+<ul>
+<li><b>top</b> - по верхнему краю
+</li><li><b>middle</b> - по центру
+</li><li><b>bottom</b> - по нижнему краю
+</li><li><b>baseline</b> - по базовой линии.
+</li></ul> 
+<b>colspan</b> - количество столбцов занимаемое ячейкой<br>
+<b>rowspan</b> - количество рядов занимаемое ячейкой<br>
+<b>bgcolor</b> - Цвет фона ячейки<br>
+<b>background</b> - Задает фоновый рисунок в ячейке.<br> 
+<i><b>bordercolor</b> - Цвет бордюра.</i><br>
+<b>title</b> - Всплывающая подсказка<br>
+<b>nowrap</b> - Запрещает перенос строк в ячейке.<br>
+<br>
+Синтаксис:<br> 
+&nbsp;&nbsp;&nbsp; &lt;table border="1" width="100%" height="300"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>&lt;th colspan="2" title="Описание заголовка" bgcolor="#b2ff80" <i>bordercolor="#ff0000"</i>&gt;Заголовок таблицы&lt;/th&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &lt;/tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     &lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;td height="200" width="33%" bgcolor="#ffa0cf"&gt;строка2 ячейка1&lt;/td&gt;<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;td title="Описание ячейки" align="center"&gt;строка2 ячейка2&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &lt;/tr&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/table&gt;
+
+</div>
+<div align="right"><a href="javascript:show_hide('Block80')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn" style="display:none">
+<td><font size="+2"><b>&lt;thead&gt;</b></font></td>
+<td class="tdl">
+в редакции..
+<div id="Block81" style="display:none">
+<br>
+Синтаксис:
+</div>
+<div align="right"><a href="javascript:show_hide('Block81')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;title&gt;</b></font></td>
+<td class="tdl">
+Заголовок и название документа. 
+<div id="Block82" style="display:none">
+Располагается в "голове" документа между тегами <b>&lt;head&gt; &lt;/head&gt;</b> может быть использован только один раз<br><br>
+Синтаксис:<br>
+<b>&lt;title&gt;Название страницы&lt;/title&gt;</b>
+<br><br>
+<a href="../html/glava1.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 1. Что такое HTML язык.)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block82')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;tr&gt;</b></font></td>
+<td class="tdl">
+Создаёт строку в таблице.
+<div id="Block83" style="display:none">
+<br>
+Атрибуты:<br>
+<b>align</b> - Выравнивает текст в ячейках строки:
+<ul> 
+<li><b>left</b> - по левому краю (по умолчанию) 
+</li><li><b>right</b> - по правому краю 
+</li><li><b>center</b> - по центру
+</li><li><b>justify</b> - по левому и правому краю.
+</li></ul> 
+<b>valign</b> - Выравнивает текст в ячейках строки по вертикали: 
+<ul>
+<li><b>top</b> - по верхнему краю 
+</li><li><b>middle</b> - по центру 
+</li><li><b>bottom</b> - по нижнему краю
+</li><li><b>baseline</b> - по базовой линии.
+</li></ul>
+<i><b>bordercolor</b> - Цвет бордюра.</i><br>
+<b>bgcolor</b> - Цвет фона ячеек строки<br>
+ <br>
+Синтаксис:<br> 
+&nbsp;&nbsp;&nbsp; &lt;table border="1" width="100%" height="300"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <b>&lt;tr valign="middle" align="center" <i>bordercolor="#ff0000"</i>&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;td&gt;строка1 ячейка1&lt;/td&gt; &lt;td&gt;строка1 ячейка2&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <b>&lt;/tr&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     <b>&lt;tr valign="top" align="left" bgcolor="#ffa0cf"&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &lt;td&gt;строка2 ячейка1&lt;/td&gt; &lt;td&gt;строка2 ячейка2&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <b>&lt;/tr&gt;</b><br>
+&nbsp;&nbsp;&nbsp; &lt;/table&gt;<br>
+<br><br>
+<a href="../html/glava4.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 4. Таблицы)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block83')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr> 
+ 
+<tr class="trc">
+<td><font size="+2"><b>&lt;tt&gt;</b></font></td>
+<td class="tdl">
+Делает текст моноширинным.
+<div id="Block84" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br> 
+Синтаксис:<br> 
+<b>&lt;tt title="Ваше описание"&gt;</b>этот текст будет моноширинным<b>&lt;/tt&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block84')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">
+<td><font size="+2"><b>&lt;u&gt;</b></font></td>
+<td class="tdl"> 
+Делает текст подчёркнутым.
+<div id="Block85" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br><br>
+Синтаксис:<br>
+<b>&lt;u title="Ваше описание"&gt;</b>этот текст будет подчёркнутым<b>&lt;/u&gt;</b>
+<br><br>
+<a href="../html/glava2.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 2. Редактируем текст)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block85')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trc">
+<td><font size="+2"><b>&lt;ul&gt;</b></font></td>
+<td class="tdl">
+Определяет ненумерованныый (неупорядоченный)список.
+<div id="Block86" style="display:none">
+<br>
+Атрибуты:<br>
+<b>type</b>-Тип маркера
+<ul>
+ <li><b>disk</b> - Закрашенный кружок. (по умолчанию)  
+ </li><li><b>circle</b> - Незакрашенный кружок  
+ </li><li><b>square</b> - Квадрат
+</li></ul>
+<b>title</b>- Всплывающая подсказка <br><br>
+Синтаксис:<br>
+<b>&lt;ul type=circle title="список"&gt;</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Пункт 3<br>
+<b>&lt;/ul&gt;</b>
+<br><br> 
+<a href="../html/glava9.html" tooltip="Читать о теге подробно в учебнике HTML   (Глава 9. Списки)">Читать о теге подробно в учебнике HTML</a>
+</div>
+<div align="right"><a href="javascript:show_hide('Block86')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr> 
+  
+<tr class="trn">
+<td><font size="+2"><b>&lt;var&gt;</b></font></td>
+<td class="tdl">
+Выделяет в тексте переменные. Обычно отображается курсивом.
+<div id="Block87" style="display:none">
+<br>
+Атрибуты:<br>
+<b>title</b>- Всплывающая подсказка <br>
+<br>
+Синтаксис:<br>
+<b>&lt;var title="Ваше описание"&gt;</b>переменная<b>&lt;/var&gt;</b>
+</div>
+<div align="right"><a href="javascript:show_hide('Block87')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+ 
+<tr class="trc">      
+<td><font size="+2"><b>&lt;wbr&gt;</b></font></td>
+<td class="tdl">
+Разрешает перенос строки.
+<div id="Block88" style="display:none">
+<br>
+Используется внутри тега <b>&lt;nobr&gt;</b> 
+<p>Синтаксис:<br>
+&lt;nobr&gt; Длинная, длинная, очень длинная строка.. которая не будет переносится на другую строчку так как мы принудительно запретили ей это делать. <b>&lt;wbr&gt;</b> Однако именно в этом месте мы все же разрешим перенести текст на следующую строчку &lt;/nobr&gt; 
+  <br><br>
+Не требует закрывающего тега.
+</p></div>
+<div align="right"><a href="javascript:show_hide('Block88')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+<tr class="trn">  
+<td><font size="+2"><b>&lt;xmp&gt;</b></font></td>
+<td class="tdl">
+Отображает текст в том виде в котором он и был набран. 
+<div id="Block89" style="display:none">
+Пробелы, переносы строк не удаляются, кроме того спецсимволы выводятся как обычный текст.
+<p>Синтаксис:<br>
+<b>&lt;xmp&gt;</b><br>
+Пример:<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Моя первая страничка &lt;/title&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Привет мир!!!<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+<b>&lt;/xmp&gt;</b>
+</p></div>
+<div align="right"><a href="javascript:show_hide('Block89')" class="sh" tooltip="Развернуть/Свернуть">↑↓</a></div>
+</td>
+</tr>
+
+</tbody>
+</div>
+<div id="London" class="tabcontent">
+<p>HTML — стандартизированный язык разметки
+ документов во Всемирной паутине. Большинство
+ веб-страниц содержат описание разметки на языке
+ HTML. Язык HTML интерпретируется браузерами;
+ полученный в результате интерпретации
+ форматированный текст отображается на экране
+ монитора компьютера или мобильного устройства.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+ <p>Тег — неструктурированное ключевое слово,
+ относящееся к части информации.
+ Такие метаданные призваны описать
+ эти части информации и помогают находить
+ их в процессе просмотра или через
+ поисковый запрос.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+<p>Результаты поиска
+Выделенное описание из Интернета
+Картинки по запросу атрибуты html
+HTML-атрибуты HTML-атрибуты сообщают браузеру,
+ каким образом должен отображаться тот
+ или иной элемент страницы.
+ Атрибуты позволяют сделать более
+ разнообразными внешний вид информации,
+ добавляемой с помощью одинаковых тегов.
+ Значение атрибута заключается в кавычки ""</p>
+</div>
+<div id="2" class="tabcontent">
+<ol>
+<li><a href="http://en.wikipedia.org/wiki/4th_Dimension_%28software%29">4th Dimension/4D</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ABAP">ABAP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ABC_%28programming_language%29">ABC</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ActionScript">ActionScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ada_%28programming_language%29">Ada</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Agilent%20VEE">Agilent VEE</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ALGOL">Algol</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Alice_%28software%29">Alice</a></li>
+<li><a href="http://www.angelcode.com/angelscript/">Angelscript</a></li>
+<li><a href="http://wiki.developerforce.com/page/Apex">Apex</a></li>
+<li><a href="http://en.wikipedia.org/wiki/APL_%28programming_language%29">APL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/AppleScript">AppleScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Arc_%28programming_language%29">Arc</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Arduino">Arduino</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Active_Server_Pages">ASP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/AspectJ">AspectJ</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Assembly_language">Assembly</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ATLAS_Transformation_Language">ATLAS</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Augeas_%28software%29">Augeas</a></li>
+<li><a href="http://en.wikipedia.org/wiki/AutoHotkey">AutoHotkey</a></li>
+<li><a href="http://en.wikipedia.org/wiki/AutoIt">AutoIt</a></li>
+<li><a href="http://en.wikipedia.org/wiki/AutoLISP">AutoLISP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Automator">Automator</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ArcView_3.x">Avenue</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Awk">Awk</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bash_%28Unix_shell%29">Bash</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Visual_basic">(Visual) Basic</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bc_programming_language">bc</a></li>
+<li><a href="http://en.wikipedia.org/wiki/BCPL">BCPL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/BETA">BETA</a></li>
+<li><a href="http://en.wikipedia.org/wiki/BlitzMax">BlitzMax</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Boo_%28programming_language%29">Boo</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bourne%20Shell">Bourne Shell</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bro_%28software%29">Bro</a></li>
+<li><a href="http://en.wikipedia.org/wiki/C_%28programming_language%29">C</a></li>
+<li><a href="http://en.wikipedia.org/wiki/C%20Shell">C Shell</a></li>
+<li><a href="http://en.wikipedia.org/wiki/C_Sharp_%28programming_language%29">C#</a></li>
+<li><a href="http://en.wikipedia.org/wiki/C++">C++</a></li>
+<li><a href="http://en.wikipedia.org/wiki/C++/CLI">C++/CLI</a></li>
+<li><a href="http://research.microsoft.com/en-us/um/cambridge/projects/comega/">C-Omega</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Caml">Caml</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ceylon_Project">Ceylon</a></li>
+<li><a href="http://en.wikipedia.org/wiki/CFML">CFML</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Cg_%28programming_language%29">cg</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ch_%28computer_programming%29">Ch</a></li>
+<li><a href="http://en.wikipedia.org/wiki/CHILL">CHILL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/C_Intermediate_Language">CIL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/CL_%28OS/400_command_interpreter%29">CL (OS/400)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Clarion_%28programming_language%29">Clarion</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Clean_%28programming_language%29">Clean</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Clipper_%28programming_language%29">Clipper</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Clojure">Clojure</a></li>
+<li><a href="http://en.wikipedia.org/wiki/CLU_%28programming_language%29">CLU</a></li>
+<li><a href="http://en.wikipedia.org/wiki/COBOL">COBOL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Cobra_%28programming_language%29">Cobra</a></li>
+<li><a href="http://en.wikipedia.org/wiki/CoffeeScript">CoffeeScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ColdFusion">ColdFusion</a></li>
+<li><a href="http://en.wikipedia.org/wiki/COMAL">COMAL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Common%20Lisp">Common Lisp</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Coq">Coq</a></li>
+<li><a href="http://vpython.org/contents/cTsource/cToverview.html">cT</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Curl_%28programming_language%29">Curl</a></li>
+<li><a href="http://en.wikipedia.org/wiki/D_%28programming_language%29">D</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dart_%28programming_language%29">Dart</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dialog_Control_Language">DCL</a></li>
+<li><a href="http://0x10cwiki.com/wiki/DCPU-16">DCPU-16 ASM</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Object_Pascal">Delphi/Object Pascal</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dibol">DiBOL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dylan_%28programming_language%29">Dylan</a></li>
+<li><a href="http://en.wikipedia.org/wiki/E_%28programming_language%29">E</a></li>
+<li><a href="http://www.ecere.com/">eC</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ECL_programming_language">Ecl</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ECMAScript">ECMAScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/EGL_%28programming_language%29">EGL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Eiffel_%28programming_language%29">Eiffel</a></li>
+<li><a href="http://elixir-lang.org/">Elixir</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Emacs%20Lisp">Emacs Lisp</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Erlang_%28programming_language%29">Erlang</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Etoys_%28programming_language%29">Etoys</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Euphoria_%28programming_language%29">Euphoria</a></li>
+<li><a href="http://en.wikipedia.org/wiki/EXEC">EXEC</a></li>
+<li><a href="http://en.wikipedia.org/wiki/F_Sharp_%28programming_language%29">F#</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Factor_%28programming_language%29">Factor</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Falcon_%28programming_language%29">Falcon</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fancy_%28programming_language%29">Fancy</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fantom_%28programming_language%29">Fantom</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Felix_%28programming_language%29">Felix</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Forth_%28programming_language%29">Forth</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fortran">Fortran</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fortress_%28programming_language%29">Fortress</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Visual_FoxPro">(Visual) FoxPro</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Gambas">Gambas</a></li>
+<li><a href="http://en.wikipedia.org/wiki/GNU%20Octave">GNU Octave</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Go_%28programming_language%29">Go</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Google_Apps_Script">Google AppsScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Gosu_%28programming_language%29">Gosu</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Groovy_%28programming_language%29">Groovy</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Haskell_%28programming_language%29">Haskell</a></li>
+<li><a href="http://en.wikipedia.org/wiki/haXe">haXe</a></li>
+<li><a href="http://www.heron-language.com/">Heron</a></li>
+<li><a href="http://hpl.sourceforge.net/">HPL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/HyperTalk">HyperTalk</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Icon_%28programming_language%29">Icon</a></li>
+<li><a href="http://en.wikipedia.org/wiki/IDL_%28programming_language%29">IDL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Inform">Inform</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Informix-4GL">Informix-4GL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/INTERCAL">INTERCAL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Io_%28programming_language%29">Io</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ioke_%28programming_language%29">Ioke</a></li>
+<li><a href="http://en.wikipedia.org/wiki/J_%28programming_language%29">J</a></li>
+<li><a href="http://en.wikipedia.org/wiki/J_Sharp">J#</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JADE_%28programming_language%29">JADE</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Java_%28programming_language%29">Java</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JavaFX_Script">Java FX Script</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JScript">JScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/JScript.NET">JScript.NET</a></li>
+<li><a href="http://julialang.org/">Julia</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Korn%20Shell">Korn Shell</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Kotlin_%28programming_language%29">Kotlin</a></li>
+<li><a href="http://en.wikipedia.org/wiki/LabVIEW">LabVIEW</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ladder_logic">Ladder Logic</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lasso_%28programming_language%29">Lasso</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Limbo_%28programming_language%29">Limbo</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lingo_%28programming_language%29">Lingo</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lisp_%28programming_language%29">Lisp</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Logo_%28programming_language%29">Logo</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Logtalk">Logtalk</a></li>
+<li><a href="http://en.wikipedia.org/wiki/LotusScript">LotusScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/LPC_%28programming_language%29">LPC</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lua_%28programming_language%29">Lua</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Lustre_%28programming_language%29">Lustre</a></li>
+<li><a href="http://en.wikipedia.org/wiki/M4_%28computer_language%29">M4</a></li>
+<li><a href="http://en.wikipedia.org/wiki/MAD_%28programming_language%29">MAD</a></li>
+<li><a href="http://en.wikipedia.org/wiki/MEDITECH">Magic</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Magik_%28programming_language%29">Magik</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Malbolge">Malbolge</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Cincom">MANTIS</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Maple_%28software%29">Maple</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Mathematica">Mathematica</a></li>
+<li><a href="http://en.wikipedia.org/wiki/MATLAB">MATLAB</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Max/MSP">Max/MSP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Maxscript">MAXScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Maya_Embedded_Language">MEL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Mercury_%28programming_language%29">Mercury</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Mirah_%28programming_language%29">Mirah</a></li>
+<li><a href="http://en.wikipedia.org/wiki/MIVA_Script">Miva</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ML_%28programming_language%29">ML</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Monkey_%28programming_language%29">Monkey</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Modula-2">Modula-2</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Modula-3">Modula-3</a></li>
+<li><a href="http://en.wikipedia.org/wiki/MOO">MOO</a></li>
+<li><a href="http://www.projectmoto.org/">Moto</a></li>
+<li><a href="http://en.wikipedia.org/wiki/MS-DOS_batch_files">MS-DOS Batch</a></li>
+<li><a href="http://en.wikipedia.org/wiki/MUMPS">MUMPS</a></li>
+<li><a href="http://en.wikipedia.org/wiki/NATURAL">NATURAL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Nemerle">Nemerle</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Nimrod_%28distributed_computing%29">Nimrod</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Not_Quite_C">NQC</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Nullsoft_Scriptable_Install_System">NSIS</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Nu_%28programming_language%29">Nu</a></li>
+<li><a href="http://en.wikipedia.org/wiki/NXT-G">NXT-G</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Oberon_%28programming_language%29">Oberon</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Object%20Rexx">Object Rexx</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Objective-C">Objective-C</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Objective-J">Objective-J</a></li>
+<li><a href="http://en.wikipedia.org/wiki/OCaml">OCaml</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Occam_programming_language">Occam</a></li>
+<li><a href="http://ooc-lang.org/">ooc</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Opa_%28programming_language%29">Opa</a></li>
+<li><a href="http://en.wikipedia.org/wiki/OpenCL">OpenCL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/OpenEdge%20ABL">OpenEdge ABL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Open_programming_language">OPL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Oz_%28programming_language%29">Oz</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Paradox_%28database%29">Paradox</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Parrot_assembly_language">Parrot</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Pascal_%28programming_language%29">Pascal</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Perl">Perl</a></li>
+<li><a href="http://en.wikipedia.org/wiki/PHP">PHP</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Pike_%28programming_language%29">Pike</a></li>
+<li><a href="http://en.wikipedia.org/wiki/PILOT">PILOT</a></li>
+<li><a href="http://en.wikipedia.org/wiki/PL/I">PL/I</a></li>
+<li><a href="http://en.wikipedia.org/wiki/PL/SQL">PL/SQL</a></li>
+<li><a href="http://fullpliant.org/doc/">Pliant</a></li>
+<li><a href="http://en.wikipedia.org/wiki/PostScript">PostScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/POV-Ray">POV-Ray</a></li>
+<li><a href="http://en.wikipedia.org/wiki/PowerBasic">PowerBasic</a></li>
+<li><a href="http://en.wikipedia.org/wiki/PowerBuilder">PowerScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/PowerShell">PowerShell</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Processing_%28programming_language%29">Processing</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Prolog">Prolog</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Puppet_%28software%29">Puppet</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Pure%20Data">Pure Data</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Python_%28programming_language%29">Python</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Q_%28equational_programming_language%29">Q</a></li>
+<li><a href="http://en.wikipedia.org/wiki/R_%28programming_language%29">R</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Racket_%28programming_language%29">Racket</a></li>
+<li><a href="http://en.wikipedia.org/wiki/REALBasic">REALBasic</a></li>
+<li><a href="http://en.wikipedia.org/wiki/REBOL">REBOL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Revolution_%28programming_language%29">Revolution</a></li>
+<li><a href="http://en.wikipedia.org/wiki/REXX">REXX</a></li>
+<li><a href="http://en.wikipedia.org/wiki/IBM_RPG">RPG (OS/400)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ruby_%28programming_language%29">Ruby</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Rust_%28programming_language%29">Rust</a></li>
+<li><a href="http://en.wikipedia.org/wiki/S_%28programming_language%29">S</a></li>
+<li><a href="http://en.wikipedia.org/wiki/S-PLUS">S-PLUS</a></li>
+<li><a href="http://en.wikipedia.org/wiki/SAS_language">SAS</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sather">Sather</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Scala_%28programming_language%29">Scala</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Scheme_%28programming_language%29">Scheme</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Scilab">Scilab</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Scratch_%28programming_language%29">Scratch</a></li>
+<li><a href="http://en.wikipedia.org/wiki/sed">sed</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Seed7">Seed7</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Self_%28programming_language%29">Self</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Unix_shell">Shell</a></li>
+<li><a href="http://en.wikipedia.org/wiki/SIGNAL_%28programming_language%29">SIGNAL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Simula">Simula</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Simulink">Simulink</a></li>
+<li><a href="http://slatelanguage.org/">Slate</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Smalltalk">Smalltalk</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Smarty">Smarty</a></li>
+<li><a href="http://en.wikipedia.org/wiki/SPARK">SPARK</a></li>
+<li><a href="http://en.wikipedia.org/wiki/SPSS">SPSS</a></li>
+<li><a href="http://en.wikipedia.org/wiki/SQR">SQR</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Squeak">Squeak</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Squirrel_%28programming_language%29">Squirrel</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Standard%20ML">Standard ML</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Suneido">Suneido</a></li>
+<li><a href="http://en.wikipedia.org/wiki/SuperCollider">SuperCollider</a></li>
+<li><a href="http://en.wikipedia.org/wiki/TACL">TACL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Tcl">Tcl</a></li>
+<li><a href="http://en.wikipedia.org/wiki/TeX">Tex</a></li>
+<li><a href="http://en.wikipedia.org/wiki/thinBasic">thinBasic</a></li>
+<li><a href="http://en.wikipedia.org/wiki/TOM_%28object-oriented_programming_language%29">TOM</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Transact-SQL">Transact-SQL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Turing_%28programming_language%29">Turing</a></li>
+<li><a href="http://en.wikipedia.org/wiki/TypeScript">TypeScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Vala_%28programming_language%29">Vala</a>/<a href="http://en.wikipedia.org/wiki/Genie_%28programming_language%29">Genie</a></li>
+<li><a href="http://en.wikipedia.org/wiki/VBScript">VBScript</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Verilog">Verilog</a></li>
+<li><a href="http://en.wikipedia.org/wiki/VHDL">VHDL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/VimL">VimL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Visual%20Basic%20.NET">Visual Basic .NET</a></li>
+<li><a href="http://en.wikipedia.org/wiki/WebDNA">WebDNA</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Whitespace_%28programming_language%29">Whitespace</a></li>
+<li><a href="http://en.wikipedia.org/wiki/X10_%28programming_language%29">X10</a></li>
+<li><a href="http://en.wikipedia.org/wiki/xBase">xBase</a></li>
+<li><a href="http://en.wikipedia.org/wiki/XBase++">XBase++</a></li>
+<li><a href="http://en.wikipedia.org/wiki/C%CF%89">Xen</a></li>
+<li><a href="http://en.wikipedia.org/wiki/XPL">XPL</a></li>
+<li><a href="http://en.wikipedia.org/wiki/XSLT">XSLT</a></li>
+<li><a href="http://en.wikipedia.org/wiki/XQuery">XQuery</a></li>
+<li><a href="http://en.wikipedia.org/wiki/yacc">yacc</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Yorick_%28programming_language%29">Yorick</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Z%20shell">Z shell</a></li>
+</ol>
+
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
+
+
+
+
+</div>
+<style>
+.mw31Ze {
+    color: rgba(66,133,244,0.15);
+    box-shadow: -2px 2px black;
+    background-color: white;
+    text-shadow: -1px 3px black;
+    box-shadow: 4px 5px black;
+    box-shadow: 1px 0px 20px green;
+}
+<style>
